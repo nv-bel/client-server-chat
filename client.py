@@ -20,4 +20,8 @@ def main():
     client.server.registerClient(client)
     
     while True:
-        pass
+        message = input()
+        client.sendMessage(message)
+    
+if __name__ == '__main__':
+    main()
